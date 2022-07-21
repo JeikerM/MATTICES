@@ -21,6 +21,7 @@ main{
 }
 footer{
     grid-area: footer;
+    height: 100%;
 
 }
 
@@ -41,7 +42,7 @@ footer{
 }
 /* MAIN */
 .tamaño img{
-    height: 500px;
+    height: 800px;
     width: 400px;
 }
 .tamaño{
@@ -51,6 +52,7 @@ footer{
     background-color:rgb(126, 76, 111);
 }
 /* fOOTER */
+
 .contactanos{
     text-align: center;
     color: rgb(206, 165, 114);
@@ -69,4 +71,11 @@ footer{
     justify-content: space-around;
     margin-top: 1rem;
 
+}
+@media only screen and (max-width:650px){
+ /*    .contactanos{
+        background-color: aquamarine;
+        
+}
+     */
 }
