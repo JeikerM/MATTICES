@@ -54,6 +54,7 @@ footer{
 /* fOOTER */
 
 .contactanos{
+    height: 100vh;
     text-align: center;
     color: rgb(206, 165, 114);
 }
@@ -73,9 +74,10 @@ footer{
 
 }
 @media only screen and (max-width:650px){
-    .contactanos{
+    footer{
 /*         background-color: aquamarine; */
-        float: buttom;
-}
+        float: butt;
+        
+    }
     
 }
