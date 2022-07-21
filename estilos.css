@@ -54,7 +54,6 @@ footer{
 /* fOOTER */
 
 .contactanos{
-    height: 100vh;
     text-align: center;
     color: rgb(206, 165, 114);
 }
@@ -73,11 +72,10 @@ footer{
     margin-top: 1rem;
 
 }
-@media only screen and (max-width:650px){
-    footer{
-/*         background-color: aquamarine; */
-        float: butt;
-        
-    }
+@media only screen and (max-width:500px){
+
+  .carousel{
+    height: 70%;
+  }
     
 }
