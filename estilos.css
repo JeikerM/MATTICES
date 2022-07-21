@@ -73,9 +73,9 @@ footer{
 
 }
 @media only screen and (max-width:650px){
- /*    .contactanos{
-        background-color: aquamarine;
-        
+    .contactanos{
+/*         background-color: aquamarine; */
+        float: buttom;
 }
-     */
+    
 }
