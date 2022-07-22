@@ -25,7 +25,17 @@ footer{
 }
 
 /* HEADER */
+.mobile__img{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+.mobile__img img{
+    width: 40%;
+}
 .nav__color{
+    display: flex;
+
     background-color: rgb(240, 136, 209);
 }
 .buscador{
@@ -40,8 +50,8 @@ footer{
     background-color: rgb(87, 81, 81);
 }
 /* MAIN */
-.tamaño img{
-    height: 800px;
+.tamaño__flex img{
+    height: 400px;
     width: 400px;
 }
 .tamaño{
@@ -55,9 +65,12 @@ footer{
 .contactanos{
     text-align: center;
     color: rgb(206, 165, 114);
+  
 }
 .contactanos li{
     list-style: none;
+    margin-bottom: 2rem;
+
 }
 .contactanos a{
     text-decoration: none;
@@ -68,12 +81,19 @@ footer{
 .contactanos__redes{
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1rem; 
 
 }
 @media only screen and (max-width:560px){
+
     .buscador{
         width: 250px;
     }
+    .tamaño img{
+        height: 400px
+    }
+/*     .mobile__img{
+        background-image: url("./img/LOGO\ SIN\ FONDO\ MATTICES.jpg");
+    } */
 }
     
