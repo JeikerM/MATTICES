@@ -22,25 +22,33 @@ header{
 }
 main{
     grid-area: main;
+    border: solid black 2px;
+    border-top: 0;
 
 }
 footer{
     grid-area: footer;
+    border: solid black 2px;
+    border-top: 0;
 
 }
 
 /* HEADER */
 .mobile__img{
+    border: solid black 2px;
+    border-bottom: none;
     display: flex;
     justify-content: center;
-    background-color: rgba(241, 241, 134, 0.699)
+    background-color: rgba(220, 134, 241, 0.699)
 }
 .mobile__img img{
     width: 40%;
 }
+.navbar{
+    border: solid black 2px;
+}
 .nav__color{
     display: flex;
-
     background-color: rgb(240, 136, 209);
 }
 .navbar{
@@ -105,9 +113,7 @@ footer{
 }
 .h1__card{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 250px;
 }
 .nosotros h1{
     font-size: 8rem;
@@ -161,6 +167,7 @@ footer{
     }
     .buscador{
         width: 350px;
+        margin-left: 10px;
     }
     .tamaño img{
         height: 400px
@@ -183,6 +190,7 @@ footer{
         margin: 0;
     }
     .nosotros h1{
+        margin: 0;
         text-align: center;
     }
     .nosotros__texto-1{
@@ -191,6 +199,69 @@ footer{
         margin: 0%;
         margin-right: 30px;
         flex-direction: column;
+    }
+    @media only screen and (max-width:700px){
+        .container-fluid{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-brand{
+            margin-left: 10px;
+        }
+        .navbar-nav{
+            margin-left: 10px;
+        }
+        .navbar-toggler{
+            margin-right: 10px;
+        }
+        .buscador{
+            width: 350px;
+            margin-left: 10px;
+        }
+        .tamaño img{
+            height: 400px
+        }
+        .contactanos__redes{
+            display: flex;
+            flex-direction: column;
+        }
+        .contactanos__redes a{
+            font-size: 2.5rem;
+        }
+        .nosotros__padre{
+            grid-template-areas: 
+            "texto-1 texto-1 texto-1"
+            "texto-1 texto-1 texto-1"
+            "image image image";
+    
+        }
+        .nosotros__padre img{
+            margin: 0;
+        }
+        .nosotros h1{
+            margin: 0;
+            text-align: center;
+        }
+        .nosotros__texto-1{
+            margin-bottom: 30px;
+        }}.h1__card{
+            margin: 0%;
+            margin-right: 30px;
+            flex-direction: column;
+        }
+    @media only screen and (max-width:570px){
+        .nosotros h1{
+            margin: 0;
+            font-size: 3rem;
+        }
+        .buscador{
+            width: 330px;
+            margin-left: 10px;
+        }
+        .iconify{
+            width: 3rem;
+            
+        }
     }
 /*     .mobile__img{
         background-image: url("./img/LOGO\ SIN\ FONDO\ MATTICES.jpg");
