@@ -65,7 +65,9 @@ footer{
 .contactanos{
     text-align: center;
     color: rgb(206, 165, 114);
-  
+}
+.contactanos__footer{
+    padding: 2rem ;
 }
 .contactanos li{
     list-style: none;
@@ -77,12 +79,16 @@ footer{
     color: black;
     font-weight: 700;
     text-transform: uppercase;
+    
 }
 .contactanos__redes{
     display: flex;
     justify-content: space-around;
     margin-top: 1rem; 
 
+}
+.contactanos__redes a{
+    font-size: 2rem;
 }
 @media only screen and (max-width:560px){
 
@@ -92,6 +98,14 @@ footer{
     .tamaño img{
         height: 400px
     }
+    .contactanos__redes{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactanos__redes a{
+        font-size: 2.5rem;
+    }
+    
 /*     .mobile__img{
         background-image: url("./img/LOGO\ SIN\ FONDO\ MATTICES.jpg");
     } */
