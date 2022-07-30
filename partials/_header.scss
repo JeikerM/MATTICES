@@ -1,0 +1,38 @@
+header {
+    grid-area: nav;
+}
+
+.mobile__img {
+    border: solid black 2px;
+    border-bottom: none;
+    @include flex (row, center, center);
+    background-color: $ColorPrincipal;
+    & img {
+        width: 40%;
+    }
+}
+
+.navbar {
+    border: solid black 2px;
+    font-weight: 900;
+}
+
+.nav__color {
+    display: flex;
+    background-color: rgb(240, 136, 209);
+}
+.buscador {
+    width: 400px;
+}
+
+.btn {
+    background-color: rgb(136, 97, 173);
+    color: white;
+    &:hover {
+        background-color: rgb(87, 81, 81);
+    }
+}
+.h1__card {
+    display: flex;
+    align-items: center;
+}

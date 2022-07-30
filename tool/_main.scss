@@ -1,0 +1,56 @@
+main {
+    grid-area: main;
+    border: solid black 2px;
+    border-top: 0;
+
+}
+.tamaño {
+    width: 100%;
+    &__flex img {
+        height: 500px;
+        width: 400px;
+    }
+}
+.nosotros {
+    background-color: $ColorPrincipal;
+    padding: 2rem;
+    & h1 {
+        font-size: 8rem;
+        margin-left: 75px;
+    
+    }
+    
+    & h2 {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    &__padre {
+        display: grid;
+        grid-template-areas:
+            "texto-1 texto-1 image"
+            "texto-1 texto-1 image"
+            "texto-1 texto-1 image";
+        grid-template-columns: 1fr 1fr 1fr;
+        & img {
+            width: 95%;
+            border: solid black 1px;
+            margin-left: 25px;
+            margin-right: 50px;
+        }
+    }    
+    &__texto-1 {
+        grid-area: texto-1;
+        font-size: 1.5rem;
+        line-height: 25px;
+        font-weight: 600;
+        &-2 {
+            grid-area: texto-2;
+            line-height: 25px;
+        
+        }
+    } 
+    &__img {
+        grid-area: image;
+}
+}

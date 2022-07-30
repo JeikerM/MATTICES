@@ -1,0 +1,14 @@
+.contenedor__padre {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    grid-column: 1 fr 1fr 1fr;
+    grid-row: 2fr 2fr 2fr;
+    background-color: beige;
+}
+
+
+
+

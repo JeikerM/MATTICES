@@ -1,0 +1,26 @@
+{
+  "name": "segunda-pre-entrega-del-proyecto-final",
+  "version": "1.0.0",
+  "description": "<h1>MATTICES</h1>\r <p> Este es un repositorio del proyecto del curso Desarrollo Web</p>\r <h2>Tecnologias usadas hasta ahora</h2>\r <ul>\r     <li>HTML</li>\r     <li>CSS</li>\r     <li>GRID Y FLEX</li>\r     <li>ANIMACIONES</li>\r     <li>GOOGLE FONTS</li>\r     <li>ICONIFY</LI>\r     <li>BOOTSTRAP</li>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss ccs/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeikerM/MATTICES.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeikerM/MATTICES/issues"
+  },
+  "homepage": "https://github.com/JeikerM/MATTICES#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
