@@ -57,6 +57,7 @@ main {
     padding: 0;
 }
 }
+/* Galeria */
 .contenedor-galeria{
    display: flex;
    justify-content: center;
@@ -77,4 +78,59 @@ main {
  & img{
     width: 400px;
  }  
+ & h1{
+    margin: 30px;
+ }
+}
+/* Recetas */
+.contenedor-recetas{
+    background-color: $ColorPrincipal;
+}
+.recetas{
+    & h1{
+        margin-left: 70px;
+        font-weight: 700;
+    }
+    & h2{
+        font-weight: 600;
+    }
+    & h3{
+        font-weight: 600;
+        margin-left: 70px;
+    }
+    & img{
+        width: 70%;
+    }
+    &__tortalimon{
+        @include flex(row, center, center);
+       &--img{
+        width: 50%;
+        margin-left: 20px;
+       }
+       &--ingredientes{
+        width: 600px;
+       }
+    }
+}
+    /* recomendaciones */
+.recomendaciones{
+    background-color: $ColorPrincipal;
+    & h1{
+        padding: 40px;
+        }
+}
+.card{
+    border: none;
+    display: flex;
+    align-items: center;
+    &-body{
+        background-color: $ColorMenu;
+    }
+    &-flex{
+        padding: 60px;
+        @include flex(row, space-around, center);
+    }
+    & img{
+        width: 70%;
+    }
 }

@@ -54,6 +54,31 @@
     .nosotros__texto-1 {
         margin-bottom: 30px;
     }
+    .recetas{
+        & ol{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & ul{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & img{
+        width:100%;
+        margin: 0;
+        }
+       
+        & h1{
+            text-align: center
+        }
+        &__tortalimon{
+            @include flex( column, center, center);
+        &--ingredientes{
+            width: 100%;
+            padding: 20px;
+        }
+        }
+    }
 }
 
 .h1__card {
@@ -61,6 +86,8 @@
     margin-right: 30px;
     flex-direction: column;
 }
+
+
 
 @media only screen and (min-width:700px) and (max-width:900px) {
     .container-fluid {
@@ -113,6 +140,32 @@
             margin-bottom: 30px;
         }
     }
+    .recetas{
+        & ol{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & ul{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & img{
+        width:100%;
+        margin: 0;
+        }
+       
+        & h1{
+            text-align: center
+        }
+        &__tortalimon{
+            @include flex( column, center, center);
+        &--ingredientes{
+            width: 100%;
+            padding: 20px;
+        }
+        }
+    }
+
 }
 
 .h1__card {
@@ -135,6 +188,7 @@
         &-toggler {
             margin-right: 10px;
         }
+        
     }
     .buscador {
         width: 350px;
@@ -171,7 +225,33 @@
             margin-bottom: 30px;
         }
     }
-}
+    .recetas{
+        & ol{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & ul{
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        & img{
+        width:100%;
+        margin: 0;
+        }
+       
+        & h1{
+            text-align: center
+        }
+        &__tortalimon{
+            @include flex( column, center, center);
+        &--ingredientes{
+            width: 100%;
+            padding: 20px;
+        }
+        }
+    }
+
+}    
 
 .h1__card {
     margin: 0%;
@@ -193,4 +273,5 @@
     .iconify {
         width: 3rem;
     }
+    
 }
