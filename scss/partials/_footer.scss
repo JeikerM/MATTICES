@@ -10,7 +10,6 @@ footer {
     text-align: left;
     background-color: $ColorFooter;
     @include flex (row, flex-start, center);
-
     & img {
         width: 200px;
         background: linear-gradient(to left, black, grey);
