@@ -6,9 +6,7 @@
   box-sizing: border-box; }
 
 body {
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  overflow-x: hidden; }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 main {
   background-color: whitesmoke; }
@@ -84,9 +82,7 @@ header {
   box-sizing: border-box; }
 
 body {
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  overflow-x: hidden; }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 main {
   background-color: whitesmoke; }
@@ -125,7 +121,7 @@ main {
     grid-template-areas: "texto-1 texto-1 image" "texto-1 texto-1 image" "texto-1 texto-1 image";
     grid-template-columns: 1fr 1fr 1fr; }
     .nosotros__padre img {
-      width: 95%;
+      width: 400px;
       border: solid black 1px;
       margin-left: 25px;
       margin-right: 50px; }
@@ -321,6 +317,12 @@ footer {
     align-items: center; }
     .nosotros__padre {
       display: block; }
+    .nosotros__img {
+      width: 100%;
+      margin-left: 10px; }
+      .nosotros__img img {
+        width: 300px;
+        height: 214px; }
   .contenedor-galeria__flex-card {
     display: flex;
     flex-direction: column;
@@ -345,7 +347,10 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      height: 100%; }
+    .contactanos__redes {
+      height: 70%; }
   .recetas h1 {
     text-align: center;
     margin: 0; }
