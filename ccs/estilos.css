@@ -6,6 +6,7 @@
   box-sizing: border-box; }
 
 body {
+  width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   overflow-x: hidden; }
 
@@ -83,6 +84,7 @@ header {
   box-sizing: border-box; }
 
 body {
+  width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   overflow-x: hidden; }
 
