@@ -14,14 +14,15 @@ main {
 .nosotros {
     background-color: $ColorPrincipal;
     padding: 2rem;
-    & h1 {
-        font-size: 8rem
+    & p{
+        margin: 20px;
     }
-    & h2 {
-        margin-bottom: 50px;
+    & h1 {
+        margin: 10px;
         font-weight: 900;
     }
-    & h3 {
+    & h2 {
+        margin: 10px;
         font-weight: 900;
     }
     &__padre {
@@ -59,15 +60,16 @@ main {
 }
 /* Galeria */
 .contenedor-galeria{
-   display: flex;
-   justify-content: center;
-   align-items: center;
    background-color: $ColorPrincipal;
    &__flex{
     @include flex (column, center, center);
     margin: 0;
     font-size: 30px;
     text-align: center;
+    &-card{
+        @include flex (row,space-around, center);
+        align-items:stretch;
+    }
    }
    p{
     margin: 40px;
@@ -78,16 +80,18 @@ main {
  & h1{
     margin: 30px;
  }
-}
-.contenedor-galeria img{
+& img{
     height: 400px;
  }  
+}
+
 /* Recetas */
 .contenedor-recetas{
     background-color: $ColorPrincipal;
 }
 .recetas{
     & h1{
+        padding: 20px;
         margin-left: 70px;
         font-weight: 700;
     }
@@ -123,14 +127,32 @@ main {
     border: none;
     display: flex;
     align-items: center;
+    margin:30px;
     &-body{
-        background-color: $ColorMenu;
+        background-color: rgb(194, 100, 173);
     }
     &-flex{
-        padding: 60px;
-        @include flex(row, space-around, center);
+        @include flex (row, space-around, center);
     }
     & img{
-        width: 70%;
+        height: 300px;
+        margin: 0;
+    }
+    & h2{
+        font-weight: 600;
+    }
+    & p{
+        font-size: 25px;
+    }
+}
+.flex-card{
+    @include flex (row, space-between, flex-start);
+    &-recomendaciones{
+        @include flex (row, space-around, flex-start);
+    }
+    .h1__card {
+        margin: 0%;
+        margin-right: 30px;
+        flex-direction: column;
     }
 }

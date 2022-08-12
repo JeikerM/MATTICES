@@ -6,22 +6,51 @@ header {
     border: solid black 2px;
     border-bottom: none;
     @include flex (row, center, center);
-    background-color: $ColorPrincipal;
+    background-color: rgb(194, 100, 173);
     & img {
         width: 40%;
     }
+    &-logo{
+        @include flex (row, center,center);
+    }
 }
+
 
 .navbar {
     border: solid black 2px;
     font-weight: 900;
+    color: $LetraMenu;
+    &-toggler{
+        background-color:$ColorPrincipal;
+
+    }
+
+}
+.navbar-nav{
+    justify-content: space-between;
+    & a:hover{
+        color: whitesmoke;
+    }
 }
 
 .nav__color {
     display: flex;
-    background-color: $ColorMenu;
+    background-color: black;
+    & li{
+    & a:hover{
+        color: white;
+    }
+}
+
+}
+.nav__color a{
+    color: $LetraMenu;
+}
+.nav__color a:hover{
+    color: $LetraMenu;
 }
 .buscador {
+    margin-left: 30px;
     width: 400px;
 }
 
@@ -29,10 +58,20 @@ header {
     background-color: rgb(136, 97, 173);
     color: white;
     &:hover {
-        background-color: rgb(87, 81, 81);
+        background-color: rgb(85, 87, 81);
     }
 }
 .h1__card {
     display: flex;
     align-items: center;
+}
+.contactanos__menu li{
+    display: inline-block;
+    margin-left: 20px;
+    & a{
+        font-size: 20px;
+        &:hover{
+            color: white;
+        }
+    }
 }
