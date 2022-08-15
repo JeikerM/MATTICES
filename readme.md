@@ -21,7 +21,7 @@
                 <ul>Todas las paginas cuentan con:
                     <li>Menu tanto para desktop como mobile</li>
                     <li>Footer con navegador</li>
-                    <li>direccion del local</li>
+                    <li>Direccion del local</li>
                     <li>Redes sociales</li>
                 </ul>
         </ul>
