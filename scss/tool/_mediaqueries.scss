@@ -229,12 +229,23 @@
             }
     
             &__tortalimon {
-                @include flex (column, center, center);
+                @include flex (row, space-between, center);
+                &--img{
+                    width: 600px;
+                    
+                }
     
                 &--ingredientes {
-                    width: 100%;
-                    margin: 10px;
-    
+                    width: 50%;
+                    margin: 0px;
+                    padding: 10px;
+                    & ul{
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                    & li{
+                        font-size: large;
+                    }
                     & h2 {
                         text-align: center;
                     }
@@ -258,5 +269,7 @@
     
         }
     
-    
+    .recetas__tortalimon--img img{
+            width: 400px;
+    }
 }

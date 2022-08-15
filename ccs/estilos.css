@@ -43,9 +43,8 @@ header {
 .navbar-nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
+  justify-content: space-around;
+  align-items: center; }
   .navbar-nav a:hover {
     color: whitesmoke; }
 
@@ -506,12 +505,20 @@ footer {
     margin: 0; }
   .recetas__tortalimon {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center; }
+    .recetas__tortalimon--img {
+      width: 600px; }
     .recetas__tortalimon--ingredientes {
-      width: 100%;
-      margin: 10px; }
+      width: 50%;
+      margin: 0px;
+      padding: 10px; }
+      .recetas__tortalimon--ingredientes ul {
+        font-size: 25px;
+        font-weight: 600; }
+      .recetas__tortalimon--ingredientes li {
+        font-size: large; }
       .recetas__tortalimon--ingredientes h2 {
         text-align: center; }
       .recetas__tortalimon--ingredientes p {
@@ -522,4 +529,6 @@ footer {
     margin-left: 0; }
     .recetas__tortalimon--img img {
       width: 100%;
-      padding: 0; } }
+      padding: 0; }
+  .recetas__tortalimon--img img {
+    width: 400px; } }
