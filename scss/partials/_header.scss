@@ -15,7 +15,9 @@ header {
     }
 }
 
-
+.carousel{
+    width: 100%;
+}
 .navbar {
     border: solid black 2px;
     font-weight: 900;
@@ -27,14 +29,15 @@ header {
 
 }
 .navbar-nav{
-    justify-content: space-between;
+    @include flex (row, center, center);
+    width: 100%;
     & a:hover{
         color: whitesmoke;
     }
+    
 }
 
 .nav__color {
-    display: flex;
     background-color: black;
     & li{
     & a:hover{
@@ -65,13 +68,28 @@ header {
     display: flex;
     align-items: center;
 }
+.formulario-menu{
+    display: flex;
+    justify-content: center;
+}
 .contactanos__menu li{
     display: inline-block;
-    margin-left: 20px;
+    margin: 20px;
     & a{
         font-size: 20px;
         &:hover{
             color: white;
         }
     }
+}
+.container-fluid{
+    display: flex;
+    align-items: center !important;
+.contactanos__redes{
+    @include flex (row, center, center);
+    padding-left: 0%;
+}
+}
+.buscador{
+    width: 350px;
 }

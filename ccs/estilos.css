@@ -30,6 +30,9 @@ header {
     justify-content: center;
     align-items: center; }
 
+.carousel {
+  width: 100%; }
+
 .navbar {
   border: solid black 2px;
   font-weight: 900;
@@ -38,12 +41,15 @@ header {
     background-color: #dfdfdfb2; }
 
 .navbar-nav {
-  justify-content: space-between; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
   .navbar-nav a:hover {
     color: whitesmoke; }
 
 .nav__color {
-  display: flex;
   background-color: black; }
   .nav__color li a:hover {
     color: white; }
@@ -68,13 +74,30 @@ header {
   display: flex;
   align-items: center; }
 
+.formulario-menu {
+  display: flex;
+  justify-content: center; }
+
 .contactanos__menu li {
   display: inline-block;
-  margin-left: 20px; }
+  margin: 20px; }
   .contactanos__menu li a {
     font-size: 20px; }
     .contactanos__menu li a:hover {
       color: white; }
+
+.container-fluid {
+  display: flex;
+  align-items: center !important; }
+  .container-fluid .contactanos__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%; }
+
+.buscador {
+  width: 350px; }
 
 * {
   margin: 0;
@@ -207,6 +230,7 @@ main {
   align-items: center;
   margin: 30px; }
   .card-body {
+    height: 400px;
     background-color: #c264ad; }
   .card-flex {
     display: flex;
@@ -298,8 +322,13 @@ footer {
 
 @media only screen and (max-width: 700px) {
   /* nav */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .buscador {
-    width: 300px;
+    width: 350px;
     margin: 0%; }
   .contactanos__redes {
     display: flex;
@@ -316,16 +345,26 @@ footer {
     justify-content: center;
     align-items: center; }
     .nosotros__padre {
-      display: block; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
     .nosotros__img {
       width: 295px;
-      padding: 0; }
+      padding: 0;
+      display: flex;
+      justify-content: center; }
       .nosotros__img img {
         width: 100%;
         height: 214px;
         border: 0;
         margin: 0;
         margin-right: 0; }
+  .flex-card-recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .contenedor-galeria__flex-card {
     display: flex;
     flex-direction: column;
@@ -354,6 +393,114 @@ footer {
       height: 100%; }
     .contactanos__redes {
       height: 70%; }
+  .recetas h1 {
+    text-align: center;
+    margin: 0; }
+  .recetas__tortalimon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .recetas__tortalimon--ingredientes {
+      width: 100%;
+      margin: 10px; }
+      .recetas__tortalimon--ingredientes h2 {
+        text-align: center; }
+      .recetas__tortalimon--ingredientes p {
+        margin: 10px;
+        font-weight: 600; }
+  .recetas__tortalimon--img {
+    width: 300px;
+    margin-left: 0; }
+    .recetas__tortalimon--img img {
+      width: 300px;
+      padding: 0; } }
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* nav */
+  .buscador {
+    width: 500px;
+    margin: 0%; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .navbar-nav a {
+      font-size: 25px; }
+  .contactanos__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px; }
+    .contactanos__redes li a {
+      font-size: 30px; }
+  .size img {
+    height: 400px; }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nosotros__padre {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .nosotros__img {
+      width: 500px;
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      .nosotros__img img {
+        width: 400px;
+        height: 280x;
+        border: 0;
+        margin: 0;
+        margin-right: 0; }
+  .flex-card-recomendaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .contenedor-galeria__flex-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card {
+    width: 400px !important; }
+  /* footer */
+  .contactanos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .contactanos__nav {
+      margin: 0; }
+      .contactanos__nav ul {
+        padding: 0; }
+      .contactanos__nav li {
+        margin: 0; }
+    .contactanos h3 {
+      padding: 0;
+      margin: 20px;
+      text-align: center; }
+    .contactanos__footer {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+    .contactanos__redes {
+      width: 100%;
+      height: 70%;
+      justify-content: space-around; }
+  .size-carousel img {
+    width: 100%;
+    height: 600px; }
   .recetas h1 {
     text-align: center;
     margin: 0; }

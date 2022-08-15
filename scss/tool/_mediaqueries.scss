@@ -1,94 +1,262 @@
 @media only screen and (max-width:700px) {
+
     /* nav */
-    .buscador{
-        width: 300px;
+    .navbar-nav{
+        @include flex(column, center, center);
+    }
+    .buscador {
+        width: 350px;
         margin: 0%;
     }
-    .contactanos__redes{
-        @include flex (row, space-around,center);
+
+    .contactanos__redes {
+        @include flex (row, space-around, center);
         margin-top: 10px;
     }
+
     /* main */
-    .size img{
+    .size img {
         height: 400px;
     }
-    .nosotros{
-        @include flex (column,center,center);
-        &__padre{
-            display: block;
+
+    .nosotros {
+        @include flex (column, center, center);
+
+        &__padre {
+            @include flex (column, center, center);
         }
-        &__img{
+
+        &__img {
             width: 295px;
-            
+            ;
             padding: 0;
-            & img{
+            display: flex;
+            justify-content: center;
+
+            & img {
                 width: 100%;
                 height: 214px;
                 border: 0;
                 margin: 0;
                 margin-right: 0;
+
             }
         }
     }
-    .contenedor-galeria__flex-card{
-        @include flex (column,center,center);
+
+    .flex-card-recomendaciones {
+        @include flex (column, center, center);
     }
+
+    .contenedor-galeria__flex-card {
+        @include flex (column, center, center);
+    }
+
     /* footer */
-    .contactanos{
+    .contactanos {
         display: flex;
         flex-direction: column;
-        &__nav{
+
+        &__nav {
             margin: 0;
-            & ul{
+
+            & ul {
                 padding: 0;
             }
-            & li{
+
+            & li {
                 margin: 0;
             }
         }
-        & h3{
+
+        & h3 {
             padding: 0;
             margin: 20px;
             text-align: center;
         }
-        &__footer{
+
+        &__footer {
             margin: 10px;
             @include flex (column, center, center);
             height: 100%;
         }
-        &__redes{
-             height: 70%;
+
+        &__redes {
+            height: 70%;
         }
     }
-    .recetas{
-        & h1{
+
+    .recetas {
+        & h1 {
             text-align: center;
             margin: 0;
         }
-        &__tortalimon{
+
+        &__tortalimon {
             @include flex (column, center, center);
-        
-            &--ingredientes{
+
+            &--ingredientes {
                 width: 100%;
                 margin: 10px;
-                & h2{
+
+                & h2 {
                     text-align: center;
                 }
-                & p{
+
+                & p {
                     margin: 10px;
                     font-weight: 600;
                 }
             }
         }
-        &__tortalimon--img{
-            width: 200px;
+
+        &__tortalimon--img {
+            width: 300px;
             margin-left: 0;
 
-            & img{
-               width: 100%;
-               padding: 0;
+            & img {
+                width: 300px;
+                padding: 0;
             }
-           }
+        }
 
     }
+}
+@media only screen and (min-width:701px) and (max-width:1000px){
+        /* nav */
+        .buscador {
+            width: 500px;
+            margin: 0%;
+        }
+        .navbar-nav{
+            @include flex (column, center, center);
+            & a{
+                font-size: 25px;
+            }
+        }
+        .contactanos__redes {
+            @include flex (row, space-around, center);
+            margin-top: 10px;
+            & li{
+            & a{
+                font-size: 30px;
+            }
+        }
+        }
+        .size img {
+            height: 400px;
+        }
+    
+        .nosotros {
+            @include flex (column, center, center);
+    
+            &__padre {
+                @include flex (column, center, center);
+            }
+    
+            &__img {
+                width: 500px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+    
+                & img {
+                    width: 400px;
+                    height: 280x;
+                    border: 0;
+                    margin: 0;
+                    margin-right: 0;
+    
+                }
+            }
+        }
+    
+        .flex-card-recomendaciones {
+            @include flex (row, center, center);
+            flex-wrap: wrap;
+        }
+    
+        .contenedor-galeria__flex-card {
+            @include flex (column, center, center);
+        }
+        .card{
+            width: 400px !important;
+        }
+        /* footer */
+        .contactanos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            &__nav {
+                margin: 0;
+    
+                & ul {
+                    padding: 0;
+                }
+    
+                & li {
+                    margin: 0;
+                }
+            }
+    
+            & h3 {
+                padding: 0;
+                margin: 20px;
+                text-align: center;
+            }
+    
+            &__footer {
+                margin: 10px;
+                @include flex (column, center, center);
+                height: 100%;
+            }
+    
+            &__redes {
+                width: 100%;
+                height: 70%;
+                justify-content: space-around;
+            }
+        }
+        .size-carousel img{
+            width: 100%;
+            height: 600px;
+        }
+        .recetas {
+            & h1 {
+                text-align: center;
+                margin: 0;
+            }
+    
+            &__tortalimon {
+                @include flex (column, center, center);
+    
+                &--ingredientes {
+                    width: 100%;
+                    margin: 10px;
+    
+                    & h2 {
+                        text-align: center;
+                    }
+    
+                    & p {
+                        margin: 10px;
+                        font-weight: 600;
+                    }
+                }
+            }
+    
+            &__tortalimon--img {
+                width: 200px;
+                margin-left: 0;
+    
+                & img {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+    
+        }
+    
+    
 }
