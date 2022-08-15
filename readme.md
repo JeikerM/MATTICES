@@ -1,15 +1,15 @@
 <h1>MATTICES</h1>
     <p> Este es un repositorio del proyecto del curso Desarrollo Web</p>
 <br>
-<h2>Screenchot Desktop</h2>
+<h2>Screenshot Desktop</h2>
 <img src="./img/Vista-desktop-1.png" alt="screenshot">
 <br>
 <img src="./img/Vista-desktop-2.png" alt="screenshot">
 <br>
-<h2>Screenchot Mobile</h2>
+<h2>Screenshot Mobile</h2>
 <img src="./img/Vista-mobile-1.png" alt="screenshot">
 <br>
-<img src="./img/Vista-mobile-2.png" alt="screenshot">
+<img src="./img/Vista-mobile-2.jpg" alt="screenshot">
 <br>
 
 <h2>Herramientas utilizadas para el desarrollo de la Página Web</h2>
@@ -20,7 +20,7 @@
         <li>GRID Y FLEX</li>
         <li>ANIMACIONES</li>
         <li>GOOGLE FONTS</li>
-        <li>SASS<li>
+        <li>SASS</li>
     </ul>
     <br>
 <h2>Librerías utilizadas</h2>
