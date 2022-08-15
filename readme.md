@@ -39,7 +39,7 @@
         <li>BOOTSTRAP (https://getbootstrap.com/)</li>
         <li>ICONIFY (https://iconify.design/)</li>
         <li>GOOGLE FONTS (https://fonts.google.com/)</li>
-        <li>ANIMATE.CSS (animate.style)</li>
+        <li>ANIMATE.CSS (https://animate.style/)</li>
     </ul>
 
 
