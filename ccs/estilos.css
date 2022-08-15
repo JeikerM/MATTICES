@@ -531,4 +531,5 @@ footer {
       width: 100%;
       padding: 0; }
   .recetas__tortalimon--img img {
-    width: 400px; } }
+    width: 400px;
+    margin-left: 15px; } }
