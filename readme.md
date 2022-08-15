@@ -9,7 +9,7 @@
     <li>GRID Y FLEX</li>
     <li>ANIMACIONES</li>
     <li>GOOGLE FONTS</li>
-    <li>ICONIFY</LI>
+    <li>ICONIFY</li>
     <li>BOOTSTRAP</li>
     <li>SASS<li>
 
